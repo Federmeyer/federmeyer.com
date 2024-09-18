@@ -1,0 +1,139 @@
+
+body {
+    background-color: #f2f2f2;
+}
+
+.container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+
+.header{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: clamp(1rem, 2rem, 1em);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Team title */
+.sect-top .title {
+    font-size: 24pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+
+.sect-top .text {
+    font-size: 18pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Team cards */
+.game,
+.team {
+    /* padding: 50px; */
+    padding-bottom: 20px;
+    background-color: white;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+}
+.team-top {
+    text-align: center;
+}
+.game-container,
+.team-cards {
+    width: 75%;
+    margin: auto;
+    flex: auto;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 20px;
+    /* background-color: aquamarine; */
+}
+.game-container {
+    width: 50%;
+    grid-template-columns: repeat(auto-fit, minmax(300, 1fr));
+}
+/* @media screen and (max-width: 768px) {
+    .team-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+} */
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    min-width: 300px;
+    flex-grow: 0.25;
+    align-content: center;
+    align-items: center;
+
+    transition: transform 0.3s ease;
+    /* background-color: ; */
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card-left {
+    margin-left: 20px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+.card-core {
+    /* display: flex;
+    flex-direction: row; */
+    padding: 20px;
+}
+.pfp {
+    width: 80px; /* Adjusted image size */
+    height: 80px; /* Adjusted image size */
+    border-radius: 30%;
+}
+.title {
+    margin-bottom: 5px;
+    /* text-align: center; */
+}
+.github {
+    color: black;
+    /* justify-self: right; */
+}
+.text {
+    color: black;
+    /* text-align: center; */
+}
+
+.my-links {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    gap: 5px;
+}
+
+.card .github img,
+.card .github svg {
+    display: flex;
+    width: 1em;
+    height: 1em;
+}
+
+.card .ios img {
+    display: flex;
+    width: 2em;
+    height: 2em;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding-bottom: 50px;
+}
